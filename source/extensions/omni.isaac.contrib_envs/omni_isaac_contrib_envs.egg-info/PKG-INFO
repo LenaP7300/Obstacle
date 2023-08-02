@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: omni-isaac-contrib-envs
+Version: 0.0.1
+Summary: Extension containing environments for robot learning contributed by the community.
+Home-page: https://github.com/NVIDIA-Omniverse/Orbit
+Author: Community
+Keywords: robotics,rl,il,learning
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.*

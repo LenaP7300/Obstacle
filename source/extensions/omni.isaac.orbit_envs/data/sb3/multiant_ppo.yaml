@@ -1,0 +1,23 @@
+# Reference: https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/hyperparams/ppo.yml#L161
+seed: 42
+
+n_timesteps: !!float 2e6
+policy: 'MultiInputPolicy'
+batch_size: 128
+n_steps: 512
+gamma: 0.99
+gae_lambda: 0.9
+n_epochs: 20
+ent_coef: 0.0
+sde_sample_freq: 4
+max_grad_norm: 0.5
+vf_coef: 0.5
+learning_rate: !!float 3e-5
+use_sde: True
+clip_range: 0.4
+policy_kwargs: dict(
+                    features_extractor_class='omni.isaac.orbit_envs.utils.CustomCombinedExtractor',
+                    activation_fn=nn.ELU,
+                    net_arch=[32, 32, dict(pi=[256, 128, 64], vf=[256, 128, 64])]
+
+                )

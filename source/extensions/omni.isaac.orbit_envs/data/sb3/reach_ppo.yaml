@@ -1,0 +1,24 @@
+# Reference: https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/hyperparams/ppo.yml#L32
+seed: 42
+
+# epoch * n_steps * nenvs: 500×512*8*8
+n_timesteps: 5000000
+policy: 'MlpPolicy'
+n_steps: 2048
+# mini batch size: num_envs * nsteps / nminibatches 2048×512÷2048
+batch_size: 64
+gae_lambda: 0.95
+gamma: 0.99
+n_epochs: 10
+ent_coef: 0.00
+vf_coef: 0.5
+learning_rate: !!float 3e-4
+clip_range: 0.2
+# target_kl: 0.01
+max_grad_norm: 0.5
+
+# # Uses VecNormalize class to normalize obs
+# normalize_input: True
+# # Uses VecNormalize class to normalize rew
+# normalize_value: True
+# clip_obs: 5

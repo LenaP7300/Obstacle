@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: omni-isaac-orbit
+Version: 0.2.8
+Summary: Extension providing main framework interfaces and abstractions for robot learning.
+Home-page: https://github.com/NVIDIA-Omniverse/Orbit
+Author: NVIDIA, ETH Zurich, and University of Toronto
+Maintainer: Mayank Mittal
+Maintainer-email: mittalma@ethz.ch
+License: BSD-3-Clause
+Keywords: kit,robotics,learning,ai
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.*
